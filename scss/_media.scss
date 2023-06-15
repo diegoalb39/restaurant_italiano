@@ -1,0 +1,19 @@
+/* ----------------MEDIA QUERIES---------------- */
+@media(min-width: 410px)and (max-width:767px){
+    .header{
+        &__navbar{
+            &--container{
+                & .button{
+                    text-align: center;
+                }
+                & .logo{
+                    display: none;
+                }
+            }
+            & .logoHidden{
+                display: block;
+
+            }
+        }
+    }
+}
