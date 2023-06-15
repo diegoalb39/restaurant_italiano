@@ -6,88 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Italiano</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="grid-container">
-        <header id="header">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="gridContainer">
+        <header class="header"> <!-- COMIENZO HEADER -->
+            <nav class="header__navbar navbar navbar-expand-md"> <!-- COMIENZO NAV -->
                 <div class="container-fluid">
-                  <!-- <a class="navbar-brand" href="#">
-                    <img src="./assets/logo.jpg" alt="logo Restaurant Italiano" width="250" height="auto">
-                  </a> -->
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto me-4 mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestra Carta</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                    </ul>
-                    <a class="navbar-brand" href="#">
-                        <img src="./assets/logo.jpg" alt="logo Restaurant Italiano" width="250" height="auto">
-                    </a>
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Ubicación</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservaciones</a>
-                        </li>
-                    </ul>
-                    
-                  </div>
+                    <!-- <a class="navbar-brand header__navbar--logo" href="#">
+                        <img src="./assets/logo.png" alt="logo Restaurant Italiano" width="180" height="auto">
+                    </a> -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="header__navbar--container collapse navbar-collapse" id="navbarSupportedContent">
+                        
+                        <ul class="navbar-nav ms-auto me-4 mb-2 mb-sm-0">
+                            <li class="nav-item header__navbar--button me-3 p-3">
+                                <a class="nav-link" href="#nuestraCarta">Nuestra Carta</a>
+                            </li>
+                            <li class="nav-item header__navbar--button me-3 p-3">
+                                <a class="nav-link" href="#nosotros">Nosotros</a>
+                            </li>
+                        </ul>
+                        <a class="navbar-brand header__navbar--logo" href="#">
+                            <img src="./assets/logo.png" alt="logo Restaurant Italiano" >
+                        </a>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item header__navbar--button ms-3 p-3">
+                                <a class="nav-link" href="#ubicacion">Ubicación</a>
+                            </li>
+                            <li class="nav-item header__navbar--button ms-3 p-3">
+                                <a class="nav-link" href="#reserva">Reservas</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
                 </div>
-              </nav>
-              <h1>RESTAURANT ITALIANO</h1>
-        </header>
-        <main id="main">
-            <section id="especiales">
+            </nav> <!-- FINAL NAV -->
+
+        </header> <!-- FINAL HEADER -->
+        <main class="main">
+            <section class="main__especiales">
                 <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                    <img src="./assets/promo1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./assets/promo1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/promo2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./assets/promo3.jpg" class="d-block w-100" alt="...">
+                        </div>
                     </div>
-                    <div class="carousel-item">
-                    <img src="./assets/promo2.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="./assets/promo3.jpg" class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </section>
-            <section id="nuestra_carta">
+            <section class="main__nuestraCarta" id="nuestraCarta">
                 <h1>Nuestra Carta</h1>
-                <img src="./assets/carta1.jpg" alt="">
-                <img src="./assets/carta2.jpg" alt="">
-                <img src="./assets/carta3.jpg" alt="">
-                <img src="./assets/carta4.jpg" alt="">
-                <img src="./assets/carta5.jpg" alt="">
-                <img src="./assets/carta6.jpg" alt="">
-                <img src="./assets/carta7.jpg" alt="">
-                <img src="./assets/carta8.jpg" alt="">
-                <img src="./assets/carta9.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta1.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta2.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta3.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta4.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta5.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta6.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta7.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta8.jpg" alt="">
+                <img class="main__nuestraCarta--card" src="./assets/carta9.jpg" alt="">
 
             </section>
-            <section id="nosotros">
+            <section class="main__nosotros" id="nosotros">
                 <h2>Nuestro Personal</h2>
-                <img src="./assets/chefs1.jpg" alt="">
-                <img src="./assets/camareras2.jpg" alt="">
-                <img src="./assets/recepcionista1.png" alt="">
+                <img class="main__nosotros--img" src="./assets/chefs1.jpg" alt="">
+                <img class="main__nosotros--img" src="./assets/camareras2.jpg" alt="">
+                <img class="main__nosotros--img" src="./assets/recepcionista1.png" alt="">
             </section>
-            <section id="ubicacion">
+            <section class="ubicacion" id="ubicacion">
                 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6094006919416!2d-58.43500138927878!3d-34.588748672846954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5891a428395%3A0x5310c4a35dc43df0!2sIl%20Matterello%20Palermo!5e0!3m2!1ses-419!2sar!4v1686716643236!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <h2>¿Dónde nos encontramos?</h2>
@@ -97,10 +103,10 @@
 
 
             </section>
-            <section id="reservacion">
-                <h2>Hacer una reserva</h2>
+            <section class="reserva" id="reserva">
+                <h2 class="reserva__h2">Hacer una reserva</h2>
                 <form action="">
-                    <article class="datos_personales">
+                    <article class="reserva datosPersonales">
                         <h3>Datos personales</h3>
                         <div class="form-floating mb-3">
                             <input type="text" class="form-control" id="floatingInput" placeholder="nombre_apellido">
@@ -116,7 +122,7 @@
                         </div>
 
                     </article>
-                    <article class="datos_reserva">
+                    <article class="reserva datos_reserva">
                         <select class="form-select" aria-label="dia_reserva">
                             <option selected>Elegir día</option>
                             <option value="1">Lunes</option>
@@ -140,21 +146,21 @@
                     </article>
      
                 </form>
-            </section>
-            <footer id="footer">
-                <h4>Copyright Albornoz Diego©</h4>
-                <div class="">
-                    <p>Gorriti 5110 esquina Thames. Palermo Soho, Buenos Aires</p>
-                    <p>Teléfono: 4831-8493</p>
-                    <a href="https://www.youtube.com/channel/UCpOtcA5asNJcu6KfO-jrUVA" target="_blank">
-                        <img src="../assets/img/logo_yt.svg" alt="Facebook">
-                    </a>
-                    <a href="https://www.instagram.com/atilayloscanibales/" target="_blank">
-                        <img src="../assets/img/logo_ig.svg" alt="Instagram">
-                    </a>
-                </div>
-            </footer>
+            </section>   
         </main>
+        <footer class="footer">
+            <h4>Copyright Albornoz Diego©</h4>
+            <div class="">
+                <p>Gorriti 5110 esquina Thames. Palermo Soho, Buenos Aires</p>
+                <p>Teléfono: 4831-8493</p>
+                <a href="https://www.youtube.com/channel/UCpOtcA5asNJcu6KfO-jrUVA" target="_blank">
+                    <img src="../assets/img/logo_yt.svg" alt="Facebook">
+                </a>
+                <a href="https://www.instagram.com/atilayloscanibales/" target="_blank">
+                    <img src="../assets/img/logo_ig.svg" alt="Instagram">
+                </a>
+            </div>
+        </footer>
     </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>

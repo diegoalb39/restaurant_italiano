@@ -1,0 +1,13 @@
+.gridContainer{
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-columns: 100%;
+    height: auto;
+    /* background-color: #8C030E ; */
+    color: #C49C18;
+    
+    
+}
