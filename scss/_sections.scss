@@ -1,8 +1,9 @@
-/* ----------------MAIN---------------- */
+/* -------------MAIN------------- */
 
-/* ----------------NUESTRA CARTA---------------- */
+
 .main{
-    &__nuestraCarta{
+
+    &__nuestraCarta{ /* -------------NUESTRA CARTA------------- */
         background-color: map-get($palette, bg);
         & h1{
             text-align: center;
@@ -16,7 +17,7 @@
             display: grid;
             grid-template-rows: repeat(3,auto);
             grid-template-columns: repeat(3,1fr);  
-            }
+        
             & .plato{
                 position: relative;
                 width: 100%;
@@ -54,13 +55,47 @@
                     visibility: visible;
                 }
             }
-
-        }
+        }   
     }
 
-
-
-
-
-
-
+    &__nosotros{ /* -------------NOSOTROS------------- */
+        background-image: url(../assets/nosotros_fondo.jpg);
+        background-size: cover;
+        & .filter{
+            padding: 50px 0;
+            background-color: #8c030e59;
+            backdrop-filter: blur(2px);
+        }
+        & h2{
+            text-align: center;
+            font-size: 5rem;
+            font-family: 'Comfortaa', cursive;
+            color: #cf964f;
+            margin-bottom: 30px;
+        }
+        &--cards{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            
+            & .card{
+                box-shadow: 9px 12px 20px 0px;
+                transition: all 400ms ease;
+                & img{
+                    width: auto;
+                    height: 55vh;
+                }
+                & h5{
+                    text-align: center;
+                    font-size: 1.7rem;
+                }
+            }
+            & .card:hover{
+                box-shadow: 11px 15px 18px 0px;
+                transform: translateY(-4%);
+            } 
+        }
+    }   
+        
+}
