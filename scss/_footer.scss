@@ -1,0 +1,15 @@
+/* ----------------FOOTER---------------- */
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #590209;
+    &__info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
