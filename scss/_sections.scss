@@ -97,5 +97,79 @@
             } 
         }
     }   
+     
+    &__ubicacion{ /* -------------UBICACIÓN------------- */
+        display: grid;
+        grid-template-columns: auto 1fr;
         
+        &--info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;    
+            align-items: center;
+            color: #f7c72b;
+            font-family: 'Righteous', cursive;
+            text-align: center;
+            padding: 0 23px;
+            background-image: url(../assets/ubicacion__fondo.jpg);
+            background-position: 30% 70%;
+            background-size: cover;
+            & .filter{
+                background-color: #8c030e59;
+                backdrop-filter: blur(3px);
+            }
+            & h2 {
+                font-size: 3rem;
+                margin-bottom: 60px;
+            }
+            & p{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    &__reserva{ /* -------------RESERVA------------- */
+        padding-bottom: 50px;
+        padding-top: 20px;
+        background-image: url(../assets/header_bg.svg);
+        & h2{
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        &--form{
+            display: grid;
+            grid-template-areas:  
+            "nombre   .   celu"
+            "dia    hora  invit"
+            ".      boton   .  ";
+            grid-template-columns: 30% auto 30%;
+            gap: 5px 30px;
+            padding: 0 50px;
+            & .celda_fondo{
+                background-color: #73020C;
+                color: map-get($palette, texto);
+            }
+            & .nombre{
+                grid-area: nombre;
+            }
+            & .celular{
+                grid-area: celu;
+            }
+            & .dia{
+                grid-area: dia;  
+            }
+            & .horario{
+                grid-area: hora;
+            }
+            & .invitados{
+                grid-area: invit;
+            }
+            & .boton{
+                grid-area: boton;
+                margin-top: 20px;
+                padding: 20px 0;
+            } 
+        }
+    }
 }

@@ -13,8 +13,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- TITLE NOSOTROS -->
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- UBICACIÓN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="gridContainer">
@@ -78,6 +82,9 @@
                     </button>
                 </div>
             </section>
+
+            <!-- SECCIÓN NUESTRA CARTA -->
+
             <section class="main__nuestraCarta" id="nuestraCarta">
                 <h1>Nuestra Carta</h1>
                 <div class="main__nuestraCarta--grilla">
@@ -145,8 +152,10 @@
                         </div>
                     </figure>
                 </div>
-
             </section>
+
+            <!-- SECCIÓN NOSOTROS -->
+
             <section class="main__nosotros" id="nosotros">
                 <div class="filter">
                     <h2>Nuestro Personal</h2>
@@ -179,58 +188,59 @@
                     </div>
                 </div>
             </section>
-            <section class="ubicacion" id="ubicacion">
-                
+
+            <!-- SECCIÓN UBICACIÓN -->
+
+            <section class="main__ubicacion" id="ubicacion">       
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.6094006919416!2d-58.43500138927878!3d-34.588748672846954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb5891a428395%3A0x5310c4a35dc43df0!2sIl%20Matterello%20Palermo!5e0!3m2!1ses-419!2sar!4v1686716643236!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <h2>¿Dónde nos encontramos?</h2>
-                <p>Gorriti 5110 esquina Thames. Palermo Soho, Buenos Aires</p>
-                <p>Horarios de apertura: Todos los días de 12:00 a 16:00hs y 20:00 a 00:00hs</p>
-                <p>Teléfono: 4831-8493</p>
-
-
+                <div class="main__ubicacion--info">
+                    <div class="filter">
+                        <h2>Nuestra Ubicación</h2>
+                        <p>Gorriti 5110 esquina Thames. Palermo Soho, Buenos Aires</p>
+                        <p>Horarios de apertura: Todos los días de 12:00 a 16:00hs y 20:00 a 00:00hs</p>
+                        <p>Teléfono: 4831-8493</p>
+                    </div>
+                </div>
             </section>
-            <section class="reserva" id="reserva">
-                <h2 class="reserva__h2">Hacer una reserva</h2>
-                <form action="">
-                    <article class="reserva datosPersonales">
-                        <h3>Datos personales</h3>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="nombre_apellido">
-                            <label for="floatingInput">Nombre y apellido</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                            <label for="floatingInput">Email</label>
-                        </div>
-                        <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="cellphone">
-                            <label for="floatingInput">Celular</label>
-                        </div>
 
-                    </article>
-                    <article class="reserva datos_reserva">
-                        <select class="form-select" aria-label="dia_reserva">
-                            <option selected>Elegir día</option>
-                            <option value="1">Lunes</option>
-                            <option value="2">Martes</option>
-                            <option value="3">Miércoles</option>
-                            <option value="4">Jueves</option>
-                            <option value="5">Viernes</option>
-                            <option value="6">Sábado</option>
-                            <option value="7">Domingo</option>
-                        </select>
-                        <select class="form-select" aria-label="horario_reserva">
-                            <option selected>Elegir horario</option>
-                            <option value="1">12:00 a 16:00hs</option>
-                            <option value="2">20:00 a 00:00hs</option>    
-                        </select>
-                        <div class="form-floating mb-3">
-                            <input type="number" class="form-control" id="floatingInput" placeholder="cellphone">
-                            <label for="floatingInput">Total invitados</label>
-                        </div>
-                        <input type="submit" value="Reservar">
-                    </article>
-     
+            <!-- SECCIÓN RESERVA -->
+            
+            <section class="main__reserva" id="reserva">
+                <h2>Hacer una reserva</h2>
+                <form action="" class="main__reserva--form">
+                    
+                    <div class="form-floating mb-3 nombre">
+                        <input type="text" class="form-control celda_fondo" id="floatingInput" placeholder="nombre_apellido">
+                        <label for="floatingInput">Nombre y apellido</label>
+                    </div>
+                    <div class="form-floating mb-3 celular">
+                        <input type="number" class="form-control celda_fondo" id="floatingInput" placeholder="cellphone">
+                        <label for="floatingInput">Celular</label>
+                    </div>
+
+                
+                    <select class="form-select dia celda_fondo" aria-label="dia_reserva">
+                        <option selected>Elegir día</option>
+                        <option value="1">Lunes</option>
+                        <option value="2">Martes</option>
+                        <option value="3">Miércoles</option>
+                        <option value="4">Jueves</option>
+                        <option value="5">Viernes</option>
+                        <option value="6">Sábado</option>
+                        <option value="7">Domingo</option>
+                    </select>
+                    <select class="form-select horario celda_fondo" aria-label="horario_reserva">
+                        <option selected>Elegir horario</option>
+                        <option value="1">12:00 a 16:00hs</option>
+                        <option value="2">20:00 a 00:00hs</option>    
+                    </select>
+                    <div class="form-floating mb-3 invitados">
+                        <input type="number" class="form-control celda_fondo" id="floatingInput" placeholder="cellphone">
+                        <label for="floatingInput">Total invitados</label>
+                    </div>
+                        
+
+                    <input class="boton" type="submit" value="Reservar">
                 </form>
             </section>   
         </main>

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -134,6 +135,75 @@
 .main__nosotros--cards .card:hover {
   box-shadow: 11px 15px 18px 0px;
   transform: translateY(-4%);
+}
+.main__ubicacion { /* -------------UBICACIÓN------------- */
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+.main__ubicacion--info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7c72b;
+  font-family: "Righteous", cursive;
+  text-align: center;
+  padding: 0 23px;
+  background-image: url(../assets/ubicacion__fondo.jpg);
+  background-position: 30% 70%;
+  background-size: cover;
+}
+.main__ubicacion--info .filter {
+  background-color: rgba(140, 3, 14, 0.3490196078);
+  backdrop-filter: blur(3px);
+}
+.main__ubicacion--info h2 {
+  font-size: 3rem;
+  margin-bottom: 60px;
+}
+.main__ubicacion--info p {
+  font-size: 1.5rem;
+}
+.main__reserva { /* -------------RESERVA------------- */
+  padding-bottom: 50px;
+  padding-top: 20px;
+  background-image: url(../assets/header_bg.svg);
+}
+.main__reserva h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+.main__reserva--form {
+  display: grid;
+  grid-template-areas: "nombre   .   celu" "dia    hora  invit" ".      boton   .  ";
+  grid-template-columns: 30% auto 30%;
+  gap: 5px 30px;
+  padding: 0 50px;
+}
+.main__reserva--form .celda_fondo {
+  background-color: #73020C;
+  color: #C49C18;
+}
+.main__reserva--form .nombre {
+  grid-area: nombre;
+}
+.main__reserva--form .celular {
+  grid-area: celu;
+}
+.main__reserva--form .dia {
+  grid-area: dia;
+}
+.main__reserva--form .horario {
+  grid-area: hora;
+}
+.main__reserva--form .invitados {
+  grid-area: invit;
+}
+.main__reserva--form .boton {
+  grid-area: boton;
+  margin-top: 20px;
+  padding: 20px 0;
 }
 
 /* ----------------MEDIA QUERIES---------------- */
